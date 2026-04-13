@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "onnxruntime-web": "^1.24.3"
+  },
+  "devDependencies": {
+    "magika": "^1.0.0",
+    "vitest": "^4.1.4"
+  }
+}

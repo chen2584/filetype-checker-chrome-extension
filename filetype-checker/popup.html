@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FileType Checker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🔍 FileType Checker</h1>
+      <p class="tagline">AI-powered file content checker · Works 100% offline</p>
+    </header>
+
+    <section id="drop-zone" class="drop-zone">
+      <div class="drop-zone-content">
+        <span class="drop-icon">📁</span>
+        <p class="drop-text">Drop file here</p>
+        <p class="drop-subtext">or click to browse</p>
+      </div>
+      <input type="file" id="file-input" hidden>
+    </section>
+
+    <section id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Analyzing...</p>
+    </section>
+
+    <section id="results" class="results hidden">
+      <div id="result-card" class="result-card"></div>
+      <button id="reset-btn" class="reset-btn">Check Another File</button>
+    </section>
+
+    <section id="error" class="error hidden">
+      <p id="error-message" class="error-message"></p>
+    </section>
+  </div>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
